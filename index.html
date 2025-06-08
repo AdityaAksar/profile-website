@@ -51,11 +51,11 @@
         }
     </style>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- NAVBAR -->
     <nav id="navbar" class="navbar navbar-expand-lg bg-transparent px-3 fixed-top">
         <a class="navbar-brand" href="#">
-            <img src="./img/logo/bcc_logo2x.jpg" alt="" width="50" height="50" class="bi me-2 rounded-circle"">
+            <img src="./img/logo/bcc_logo2x.jpg" alt="" width="50" height="50" class="bi me-2 rounded-circle">
             <span class="fs-4 fw-semibold title-white" id="judul">Biology Conservation Club</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -64,36 +64,39 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="nav nav-pills ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Beranda</a>
+                    <a class="nav-link active" href="#beranda">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Kegiatan</a>
+                    <a class="nav-link" href="#tentang">Tentang</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Galeri</a>
+                    <a class="nav-link" href="#regional">Regional</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Kontak</a>
+                    <a class="nav-link" href="#divisi">Divisi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tentang Kami</a>
+                    <a class="nav-link" href="#kegiatan">Kegiatan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#galeri">Galeri</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- BACKGROUND IMAGE -->
-    <div class="bg-img">
+    <div class="bg-img" id="beranda">
         <div class="col-md-6 p-lg-5 mx-auto my-5">
             <h1 class="display-3 fw-bold" style="color: #00DD00;">Biology <br>Conservation <br>Club</h1>
             <h3 class="fw-normal mb-3" style="color: rgb(255, 255, 255); opacity: 0.8;">"Kalau Bukan Kita Siapa Lagi?" <br>"Kalau Bukan Sekarang Kapan Lagi?"</h3>
             <div class="d-flex gap-5 justify-content-center lead fw-normal nav nav-pills">
-                <a href="#" class="nav-link active rounded-pill">Kegiatan</a>
-                <a href="#" class="nav-link active rounded-pill">Tentang Kami</a>
+                <a href="#tentang" class="nav-link active rounded-pill">Tentang</a>
+                <a href="#kegiatan" class="nav-link active rounded-pill">Kegiatan</a>
             </div>
         </div>
     </div>
     <!-- TENTANG -->
-    <div class="container pt-5 px-4 text-center">
+    <div class="container pt-5 px-4 text-center" id="tentang">
         <h2 class="pb-2 border-bottom">TENTANG</h2>
         <img class="d-block mx-auto mb-4 rounded-circle" src="./img/logo/bcc_logo2x.jpg" alt="" width="150" height="150">
         <h1 class="display-6 fw-bold text-body-emphasis">BCC</h1>
@@ -102,7 +105,7 @@
         </div>
     </div>
     <!-- REGIONAL -->
-    <div class="container pt-5 px-4">
+    <div class="container pt-5 px-4" id="regional">
         <h2 class="pb-2 border-bottom text-center">REGIONAL</h2>
         <div class="row text-center pt-5">
             <div class="col-lg-4 pb-4 d-flex flex-column px-3">
@@ -110,8 +113,8 @@
                 <h2 class="fw-normal">SULAWESI TENGAH</h2>
                 <p>Cakupan wilayah kerja Biology Conservation Club yang berfokus pada isu-isu konservasi yang ada di provinsi Sulawesi Tengah </p>
                 <div class="d-flex gap-3 justify-content-center lead fw-normal  mt-auto">
-                    <a href="https://g.co/kgs/gNSH7fs" class="link-dark link-underline-opacity-0"><img src="./node_modules/bootstrap-icons/icons/pin-map-fill.svg" alt="" height="14" width="14">Sigi</a>
-                    <a href="https://www.instagram.com/biologyconservation_club/" class="link-dark link-underline-opacity-0"><img src="./node_modules/bootstrap-icons/icons/instagram.svg" alt="" height="14" width="14">BCC</a>
+                    <a target="_blank" href="https://g.co/kgs/gNSH7fs" class="link-dark link-underline-opacity-0"><img src="./node_modules/bootstrap-icons/icons/pin-map-fill.svg" alt="" height="14" width="14">Sigi</a>
+                    <a target="_blank" href="https://www.instagram.com/biologyconservation_club/" class="link-dark link-underline-opacity-0"><img src="./node_modules/bootstrap-icons/icons/instagram.svg" alt="" height="14" width="14">BCC</a>
                 </div>
             </div>
             <div class="col-lg-4 pb-4 d-flex flex-column px-3">
@@ -119,8 +122,8 @@
                 <h2 class="fw-normal">MTSN 3 PALU</h2>
                 <p>Ditujukan untuk melibatkan pelajar tingkat sekolah menengah pertama dalam kegiatan konservasi lingkungan sejak usia dini. Dan berperan penting dalam membangun kesadaran dan kecintaan terhadap alam melalui pendekatan yang edukatif dan menyenangkan</p>
                 <div class="d-flex gap-3 justify-content-center lead fw-normal mt-auto">
-                    <a href="https://g.co/kgs/tU2BnkS" class="link-dark link-underline-opacity-0"><img src="./node_modules/bootstrap-icons/icons/pin-map-fill.svg" alt="" height="14" width="14">Palu</a>
-                    <a href="https://www.instagram.com/bcc_mtsn3kotapalu/" class="link-dark link-underline-opacity-0"><img src="./node_modules/bootstrap-icons/icons/instagram.svg" alt="" height="14" width="14">BCC</a>
+                    <a target="_blank" href="https://g.co/kgs/tU2BnkS" class="link-dark link-underline-opacity-0"><img src="./node_modules/bootstrap-icons/icons/pin-map-fill.svg" alt="" height="14" width="14">Palu</a>
+                    <a target="_blank" href="https://www.instagram.com/bcc_mtsn3kotapalu/" class="link-dark link-underline-opacity-0"><img src="./node_modules/bootstrap-icons/icons/instagram.svg" alt="" height="14" width="14">BCC</a>
                 </div>
             </div>
             <div class="col-lg-4 pb-4 d-flex flex-column px-3">
@@ -128,14 +131,14 @@
                 <h2 class="fw-normal">MAN 1 PALU</h2>
                 <p>Sebagai wadah pembinaan dan pelibatan pelajar tingkat sekolah menengah atas dalam kegiatan konservasi yang lebih kompleks dan aplikatif. Di sini, pelajar dilatih untuk menjadi agen perubahan yang mampu menginisiasi proyek lingkungan secara mandiri.</p>
                 <div class="d-flex gap-3 justify-content-center lead fw-normal mt-auto">
-                    <a href="https://g.co/kgs/QuMZgEs" class="link-dark link-underline-opacity-0"><img src="./node_modules/bootstrap-icons/icons/pin-map-fill.svg" alt="" height="14" width="14">Palu</a>
-                    <a href="https://www.instagram.com/bcc_man1kotapalu/" class="link-dark link-underline-opacity-0"><img src="./node_modules/bootstrap-icons/icons/instagram.svg" alt="" height="14" width="14">BCC</a>
+                    <a target="_blank" href="https://g.co/kgs/QuMZgEs" class="link-dark link-underline-opacity-0"><img src="./node_modules/bootstrap-icons/icons/pin-map-fill.svg" alt="" height="14" width="14">Palu</a>
+                    <a target="_blank" href="https://www.instagram.com/bcc_man1kotapalu/" class="link-dark link-underline-opacity-0"><img src="./node_modules/bootstrap-icons/icons/instagram.svg" alt="" height="14" width="14">BCC</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Divisi -->
-    <div class="container px-4 py-5">
+    <div class="container px-4 py-5" id="divisi">
         <h2 class="pb-2 border-bottom text-center">DIVISI</h2>
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
             <div class="col">
@@ -180,7 +183,7 @@
         </div>
     </div>
     <!-- KEGIATAN -->
-    <div class="container px-4 py-5">
+    <div class="container px-4 py-5" id="kegiatan">
         <h2 class="pb-2 border-bottom text-center">KEGIATAN</h2>
         <div class="row featurette py-3">
             <div class="col-md-7 order-md-1">
@@ -229,7 +232,7 @@
         </div>
     </div>
     <!-- GALERI -->
-    <div class="container px-4 py-5">
+    <div class="container px-4 py-5" id="galeri">
         <h2 class="pb-2 border-bottom text-center">GALERI</h2>
         <div class="carousel slide" data-bs-ride="carousel" id="carousel">
             <div class="carousel-inner">
@@ -257,11 +260,12 @@
     <div class="container">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Beranda</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Kegiatan</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Galeri</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Kontak</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Tentang Kami</a></li>
+                <li class="nav-item"><a href="#beranda" class="nav-link px-2 text-body-secondary">Beranda</a></li>
+                <li class="nav-item"><a href="#tentang" class="nav-link px-2 text-body-secondary">Tentang</a></li>
+                <li class="nav-item"><a href="#regional" class="nav-link px-2 text-body-secondary">Regional</a></li>
+                <li class="nav-item"><a href="#divisi" class="nav-link px-2 text-body-secondary">Divisi</a></li>
+                <li class="nav-item"><a href="#kegiatan" class="nav-link px-2 text-body-secondary">Kegiatan</a></li>
+                <li class="nav-item"><a href="#galeri" class="nav-link px-2 text-body-secondary">Galeri</a></li>
             </ul>
             <p class="text-center text-body-secondary">&copy; 2025</p>
         </footer>
